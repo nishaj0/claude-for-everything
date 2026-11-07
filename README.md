@@ -4,8 +4,6 @@ A community-maintained list of skills, plugins, MCP servers and rule files for C
 
 > Free or freemium only: no paid-only tools. Contributions are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md). Install steps are left out on purpose: follow each repo's README.
 >
-> Tools that also work with other agents are fine, as long as they support Claude. Optional paid tiers are fine if the core is free.
->
 > **Caution:** entries are not security-audited. Review any skill, plugin or MCP server before installing it, see [Security](#security).
 
 ## Contents

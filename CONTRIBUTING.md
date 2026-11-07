@@ -7,7 +7,8 @@ Category names stay short and plain (`Video`, `Marketing`). The entry itself can
 Columns: **Name** (linked to the repo or URL) · **Type** · **What it does** (one sentence, checked against the linked page). No install commands.
 
 Rules:
-- Free or freemium only. No paid-only tools or MCP servers.
+- Free or freemium only. No paid-only tools or MCP servers. Optional paid tiers are fine if the core is free.
+- Tools that also work with other agents are fine, as long as they clearly support Claude.
 - Only list things you've used or read the README of. No paid ads, no dead links.
 - If an entry fits two categories, put it in the main one and add a cross-link in the other.
 - Say so if it sends emails, runs code or spends money.

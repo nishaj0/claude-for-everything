@@ -4,6 +4,8 @@ A community-maintained list of skills, plugins, MCP servers and rule files for C
 
 > Free or freemium only: no paid-only tools. Contributions are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md). Install steps are left out on purpose: follow each repo's README.
 >
+> Tools that also work with other agents are fine, as long as they support Claude. Optional paid tiers are fine if the core is free.
+>
 > **Caution:** entries are not security-audited. Review any skill, plugin or MCP server before installing it, see [Security](#security).
 
 ## Contents
@@ -158,6 +160,7 @@ The standalone [open-seo](#apps-agents--examples) (Semrush/Ahrefs alternative) i
 | [humanizer](https://github.com/blader/humanizer) | skill | An MIT-licensed skill that rewrites AI-sounding text to read as human, based on Wikipedia's Signs of AI writing guide. |
 | [SimpleEnglish](https://github.com/AminBlg/SimpleEnglish) | skill | A free MIT-licensed skill and Claude Code plugin that makes Claude write in ASD-STE100 Simplified Technical English. |
 | [xiaohongshu-mcp](https://github.com/xpzouying/xiaohongshu-mcp) | MCP | An Apache-2.0 MCP server that lets Claude Code search, read and publish on xiaohongshu.com (RedNote), including likes, favorites and comments. Publishes and comments from your account. |
+| [baoyu-skills](https://github.com/JimLiu/baoyu-skills) | skill | 20+ skills for content work such as comics, infographics, image generation and posting to X, WeChat and Weibo. Posting uses your logged-in browser; image skills call paid third-party APIs. |
 
 ### Sales Outreach
 
@@ -191,6 +194,10 @@ Add structure to how the agent plans, reviews and tests, so it stops jumping str
 | [ruflo](https://github.com/ruvnet/ruflo) | plugin | Agent meta-harness for Claude Code that adds multi-agent swarms, workflows, memory and cost tracking through installable plugins. Large project; some plugins can call cloud agents that cost API money. |
 | [CLI-Anything](https://github.com/HKUDS/CLI-Anything) | plugin | Claude Code plugin marketplace that generates agent-usable command-line interfaces for existing software so Claude can drive it. Runs commands on your machine. |
 | [MCPJungle](https://github.com/mcpjungle/MCPJungle) | MCP | Self-hosted MCP gateway: register your MCP servers once and connect Claude to a single endpoint. Holds the credentials for those servers. |
+| [oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | plugin | Multi-agent orchestration for Claude Code with team-style workflows and commands. Runs many sessions, so token use is high. |
+| [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | list | Guide to Claude Code concepts, workflows, skill and agent collections, and tips. |
+| [pm-skills](https://github.com/phuryn/pm-skills) | plugin | Marketplace of 69 product-management skills and 42 chained workflows covering discovery, strategy, PRDs, launch and metrics. |
+| [elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) | plugin | Plugin for designing and reviewing software specs: an "elephant" drafts with your project context, then "goldfish" reviewers check it with fresh eyes. Needs a session that can start subagents. |
 
 ### Quality & Token Saving
 
@@ -207,6 +214,8 @@ Get better behavior from coding agents and spend fewer tokens or dollars.
 | [CodeBurn](https://codeburn.app) | CLI | Free, open-source, local-first tracker of AI coding token usage and cost across 42 tools, broken down by model, project and task. |
 | [SkillSpector](https://github.com/NVIDIA/SkillSpector) | skill | An Apache-2.0 security scanner that checks agent skills, including Claude Code skills, for prompt injection, data exfiltration and supply-chain risks before install. |
 | [context-mode](https://github.com/mksglu/context-mode) | plugin | A free local Claude Code plugin and MCP server that keeps tool output out of the context window using a sandbox and SQLite full-text search. |
+| [rtk](https://github.com/rtk-ai/rtk) | app | Rust CLI proxy that compresses command output before it reaches Claude to cut token use. Installs a Claude Code hook; the CLI is Apache-2.0 but its engine folder is BUSL-1.1 (source-available). |
+| [headroom](https://github.com/headroomlabs-ai/headroom) | app | Compression layer that shrinks tool output, logs and files before they reach Claude, usable as a wrapper, proxy or MCP server. Telemetry can be turned off; a paid Teams offering is separate. |
 
 
 ### Memory & Context
@@ -227,6 +236,9 @@ Stop the agent forgetting everything between sessions.
 | [GitNexus](https://github.com/abhigyanpatwari/GitNexus) | MCP | Indexes a repo into a knowledge graph and exposes it to Claude Code through MCP, skills and hooks. Free for noncommercial use only (PolyForm Noncommercial); commercial use needs a paid licence. |
 | [ai-memory](https://github.com/akitaonrails/ai-memory) | MCP | Shared long-term memory layer that lets Claude Code sessions keep and hand off context across tools. Stores session memory locally. |
 | [floorplan](https://github.com/haydenschmitty/floorplan) | plugin | Claude Code plugin that has Claude read your codebase and draw an interactive plain-English map of its parts, files and connections. Runs locally on your existing Claude plan. |
+| [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | MCP | Indexes your repo into a local knowledge graph so Claude can query structure instead of re-reading files. The installer runs a curl or PowerShell script. |
+| [serena](https://github.com/oraios/serena) | MCP | Toolkit that gives Claude IDE-style semantic code search, editing and refactoring. GPL-3.0; an optional JetBrains plugin is paid. |
+| [book-to-skill](https://github.com/virgiliojr94/book-to-skill) | skill | Turns a technical book PDF into a chaptered skill Claude can consult on demand. Don't redistribute skills made from copyrighted books. |
 
 ### Browser & Web Access
 
@@ -286,6 +298,9 @@ Polish, translate and review academic papers.
 | Name | Type | What it does |
 |---|---|---|
 | [awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | list | Prompt templates (translating, polishing, shortening, reviewer-style checks) and agent skills for writing research papers; the README is in Chinese. |
+| [last30days-skill](https://github.com/mvanhorn/last30days-skill) | plugin | Researches a topic across Reddit, X, YouTube, Hacker News and the web from the last 30 days and writes a sourced summary. Sends search queries to those platforms. |
+| [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | plugin | Skill suite that guides academic work through research, writing, review and revision with human sign-off at each stage. CC BY-NC: non-commercial use only. |
+| [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | skill | Library of 177 scientific skills for biology, chemistry, medicine and data analysis, plus guides to 100+ databases. Works across agents, Claude Code included. |
 
 [↑ Contents](#contents)
 
@@ -296,6 +311,7 @@ Polish, translate and review academic papers.
 | Name | Type | What it does |
 |---|---|---|
 | [ai-job-search](https://github.com/ai-job-search-dev/ai-job-search) | framework on Claude Code | Job application framework built on Claude Code with commands to evaluate postings, tailor your CV, write cover letters and prep interviews; MIT licensed, fork and run locally. |
+| [career-ops](https://github.com/career-ops-hq/career-ops) | plugin | Scans job boards, scores roles against your CV, tailors resumes and cover letters, and tracks applications. Your CV goes to the AI provider. |
 
 
 [↑ Contents](#contents)
@@ -321,6 +337,8 @@ Where to find more.
 | [claude-code-templates](https://github.com/davila7/claude-code-templates) | list | An MIT-licensed CLI and catalog of roughly 1,900 installable components for configuring and monitoring Claude Code. |
 | [claude-howto](https://github.com/luongnv89/claude-howto) | list | A free MIT-licensed, example-driven guide to Claude Code with copy-paste templates for slash commands, hooks, subagents and MCP configs. |
 | [awesome-harness-engineering](https://github.com/ai-boost/awesome-harness-engineering) | list | Curated list of patterns and tools for the harness around an AI model: context delivery, tool design, skills and MCP, memory, permissions and verification. Not Claude-only. |
+| [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | list | Hand-curated list of Claude Code skills, agents, plugins, hooks, status lines and tooling. CC BY-NC-ND licence: link to it, don't copy its content. |
+| [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | list | Curated list of 1,000+ agent skills from official teams and the community. Works across several agents, Claude Code included. |
 
 **Security:** skills run commands on your machine, so read a skill before you install it.
 

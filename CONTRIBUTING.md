@@ -4,7 +4,9 @@ Everything lives in `README.md`. Add one table row to the right section (create 
 
 Category names stay short and plain (`Video`, `Marketing`). The entry itself can be as descriptive as needed.
 
-Columns: **Name** (linked to the repo or URL) · **Type** · **What it does** (one sentence, checked against the linked page). No install commands.
+Columns: **Name** (linked to the repo or URL) · **Type** (use one from [Types used in tables](README.md#types-used-in-tables), or combine two like `skill + CLI`) · **What it does** (one sentence, checked against the linked page). No install commands.
+
+Don't edit **Start here** or **Recently added** in a pull request. The maintainer updates those.
 
 Rules:
 - Free or freemium only. No paid-only tools or MCP servers. Optional paid tiers are fine if the core is free.

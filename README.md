@@ -47,6 +47,7 @@ Code-driven video: the agent writes HTML, GSAP or Canvas and renders it to MP4.
 | [brag](https://github.com/latent-spaces/brag) | skill | Agent skill (/brag, plus a lean /brag-slim) that turns your project into a short launch video with music, motion and share copy; installs as a Claude Code plugin. |
 | [super-video-maker-skill](https://github.com/Bomx/super-video-maker-skill) | skill | End-to-end video production skill: turns an idea, link, screen recording or script into a finished video using HeyGen avatars, AI b-roll, Remotion, HyperFrames, FFmpeg and captions. |
 | [remotion](https://github.com/remotion-dev/remotion) | framework + skills | Make videos programmatically with React, with Agent Skills docs for AI assistants. Free to start, but it has a special licence that needs a paid company licence in some cases, so check it first. |
+| [raea](https://github.com/shinyobjectz/raea) | engine + plugin | Render Anything Engine: write videos, motion graphics, 3D and games as React and TypeScript and render them on your own GPU, with Claude Code skills and a plugin. Free, no account, no telemetry; FSL-1.1 licence (source-available, not open source) and still in canary. The installer is a curl script that adds skills to `~/.claude/skills`. |
 
 ### Animation Styles
 

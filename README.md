@@ -37,14 +37,14 @@ Not sure where to begin? Eight picks, one per area:
 
 ## Recently added
 
+- [mcp2cli](https://github.com/knowsuchagency/mcp2cli): turn any MCP server or API into a CLI. ([Token Saving & Cost](#token-saving--cost))
+- [mcporter](https://github.com/openclaw/mcporter): call MCP servers from scripts and the terminal. ([Apps & Tools](#apps--tools))
 - [raea](https://github.com/shinyobjectz/raea): videos, motion graphics, 3D and games as code. ([Motion Graphics](#motion-graphics))
 - [Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep): autonomous research loops. ([Research Writing](#research-writing))
 - [universal-modder](https://github.com/rehan-remade/universal-modder): mod PC games you own. ([Modding](#modding))
 - [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian): an Obsidian wiki built from your sources. ([Notes & Knowledge](#notes--knowledge))
 - [cognee](https://github.com/topoteretes/cognee): a knowledge-graph memory layer. ([Memory & Context](#memory--context))
 - [orca](https://github.com/stablyai/orca): many coding agents in parallel. ([Multi-Agent & Orchestration](#multi-agent--orchestration))
-- [claude-blog](https://github.com/AgriciDaniel/claude-blog): research, write and SEO-check blog posts. ([SEO](#seo))
-- [mobile-mcp](https://github.com/mobile-next/mobile-mcp): control iOS and Android devices. ([Browser & Computer Control](#browser--computer-control))
 
 ## Video
 
@@ -279,6 +279,7 @@ Spend fewer tokens or dollars, and see where they go.
 | [rtk](https://github.com/rtk-ai/rtk) | app | Rust CLI proxy that compresses command output before it reaches Claude to cut token use. Installs a Claude Code hook; the CLI is Apache-2.0 but its engine folder is BUSL-1.1 (source-available). |
 | [headroom](https://github.com/headroomlabs-ai/headroom) | app | Compression layer that shrinks tool output, logs and files before they reach Claude, usable as a wrapper, proxy or MCP server. Telemetry can be turned off; a paid Teams offering is separate. |
 | [token-optimizer](https://github.com/alexgreensh/token-optimizer) | plugin | Plugin that finds wasted tokens, checkpoints sessions across compaction and shows cost on a local dashboard. PolyForm Noncommercial: free for personal use and businesses under 5 people. |
+| [mcp2cli](https://github.com/knowsuchagency/mcp2cli) | CLI + skill | Turns any MCP server, OpenAPI spec or GraphQL endpoint into a command-line tool at runtime, so an agent doesn't load every tool schema each turn; ships a skill for Claude Code. Supports OAuth and can send your credentials to the APIs you point it at. |
 
 ### Memory & Context
 
@@ -508,6 +509,7 @@ Full products and tools. Useful, but you run them yourself.
 | [mcp-use](https://github.com/mcp-use/mcp-use) | app | TypeScript framework for building MCP servers and MCP apps. |
 | [whatsapp-mcp](https://github.com/lharries/whatsapp-mcp) | MCP | An MIT-licensed MCP server that connects your personal WhatsApp account to Claude so it can search, read and send messages. Sends messages from your WhatsApp account. |
 | [rea](https://github.com/morluto/rea) | MCP | MCP server for reverse engineering binaries, apps and runtime behavior, with Claude Code setup. Launches local analysis tools, so treat it as code-executing and security-sensitive. |
+| [mcporter](https://github.com/openclaw/mcporter) | CLI + library | Lists and calls MCP servers from a terminal or TypeScript script, imports your Claude Code and Desktop MCP configs, and can package a server as its own CLI. Handles OAuth logins and runs the servers you configure. |
 
 ### Examples & Demos
 

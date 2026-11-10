@@ -106,6 +106,8 @@ Make agents produce better-looking interfaces.
 | [hallmark](https://github.com/Nutlope/hallmark) | skill | A free MIT-licensed design skill from Together AI that helps Claude Code build web pages that do not look AI-generated. |
 | [skills](https://github.com/jakubkrehel/skills) | skill | A free MIT-licensed collection of skills for reviewing and building interfaces, covering accessibility, layout, typography, color and writing, installable as a Claude Code plugin. |
 | [unslop](https://github.com/heydamir/unslop) | skill | Claude Code skill that audits vibecoded, AI-looking UI and redesigns it pass by pass into a more distinctive interface. CC-BY-4.0; optional image generation asks before each paid call. |
+| [huashu-design](https://github.com/alchaincyf/huashu-design) | skill | MIT skill that turns one prompt into animations, app prototypes, slides and infographics for Claude Code. README is Chinese-first with an English version; no telemetry, optional cloud features need your own keys. |
+| [ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) | template + command | Next.js template with a `/clone-website <url>` command that has Claude rebuild a site as a Next.js app. Copies other people's designs, so mind copyright and site terms. |
 
 ### Diagrams
 
@@ -113,6 +115,7 @@ Make agents produce better-looking interfaces.
 |---|---|---|
 | [diagram-design](https://github.com/cathrynlavery/diagram-design) | skill | Skill that draws diagrams as one self-contained HTML + SVG file in your brand, with 45 diagram types and no Mermaid-style output. |
 | [archify](https://github.com/tt-a1i/archify) | skill | Turns an idea, question, plan or repo description into an interactive HTML page you can explore, customize and share, from itineraries to system diagrams. |
+| [next-ai-draw-io](https://github.com/DayuanJiang/next-ai-draw-io) | MCP + app | Create and edit draw.io diagrams by chatting; works as a web app, desktop app or MCP server for Claude Code. You bring a model API key or use local models. |
 
 ### Logo & Brand
 
@@ -196,6 +199,10 @@ Add structure to how the agent plans, reviews and tests, so it stops jumping str
 | [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | list | Guide to Claude Code concepts, workflows, skill and agent collections, and tips. |
 | [pm-skills](https://github.com/phuryn/pm-skills) | plugin | Marketplace of 69 product-management skills and 42 chained workflows covering discovery, strategy, PRDs, launch and metrics. |
 | [elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) | plugin | Plugin for designing and reviewing software specs: an "elephant" drafts with your project context, then "goldfish" reviewers check it with fresh eyes. Needs a session that can start subagents. |
+| [cc-switch](https://github.com/farion1231/cc-switch) | app | Desktop app that switches API providers and manages MCP servers, skills and prompts for Claude Code, Claude Desktop and other agents. Rewrites your agent config files and holds API keys; the README carries paid relay-service ads. |
+| [github-mcp-server](https://github.com/github/github-mcp-server) | MCP | GitHub's MCP server that lets Claude read repos, manage issues and pull requests, and check Actions and security alerts. Needs a GitHub token and can write to repos; a read-only mode is available. |
+| [orca](https://github.com/stablyai/orca) | app | Desktop app that runs Claude Code and other coding agents in parallel, each in its own git worktree. MIT licensed; collects anonymous usage data unless you opt out. |
+| [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | tutorial | 17-lesson Python tutorial on building a Claude Code-style agent harness from scratch. Needs your own Anthropic API key; the lesson agents run shell commands. |
 
 ### Quality & Token Saving
 
@@ -214,6 +221,8 @@ Get better behavior from coding agents and spend fewer tokens or dollars.
 | [context-mode](https://github.com/mksglu/context-mode) | plugin | A free local Claude Code plugin and MCP server that keeps tool output out of the context window using a sandbox and SQLite full-text search. |
 | [rtk](https://github.com/rtk-ai/rtk) | app | Rust CLI proxy that compresses command output before it reaches Claude to cut token use. Installs a Claude Code hook; the CLI is Apache-2.0 but its engine folder is BUSL-1.1 (source-available). |
 | [headroom](https://github.com/headroomlabs-ai/headroom) | app | Compression layer that shrinks tool output, logs and files before they reach Claude, usable as a wrapper, proxy or MCP server. Telemetry can be turned off; a paid Teams offering is separate. |
+| [i-have-adhd](https://github.com/ayghri/i-have-adhd) | skill | Small skill that makes Claude lead with the next action, number its steps and drop filler, installable as a Claude Code plugin. |
+| [open-code-review](https://github.com/alibaba/open-code-review) | CLI + plugin | Reads your git diff and has an LLM write line-level review comments; has a Claude Code plugin. Needs your own LLM key unless you use delegate mode, and sends the diff to that model. |
 
 
 ### Memory & Context
@@ -237,6 +246,7 @@ Stop the agent forgetting everything between sessions.
 | [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) | MCP | Indexes your repo into a local knowledge graph so Claude can query structure instead of re-reading files. The installer runs a curl or PowerShell script. |
 | [serena](https://github.com/oraios/serena) | MCP | Toolkit that gives Claude IDE-style semantic code search, editing and refactoring. GPL-3.0; an optional JetBrains plugin is paid. |
 | [book-to-skill](https://github.com/virgiliojr94/book-to-skill) | skill | Turns a technical book PDF into a chaptered skill Claude can consult on demand. Don't redistribute skills made from copyrighted books. |
+| [cognee](https://github.com/topoteretes/cognee) | plugin | Memory layer that turns documents, code and chats into a knowledge graph agents can search across sessions; installs as a Claude Code plugin and runs locally. Using an LLM key sends data to that provider; Cognee Cloud is an optional paid service. |
 
 ### Browser & Web Access
 
@@ -251,6 +261,7 @@ Let the agent read, search, browse and scrape the web.
 | [BrowserMCP](https://github.com/BrowserMCP/mcp) | MCP | MCP server plus a Chrome extension that lets Claude control your own browser. |
 | [crawl4ai](https://github.com/unclecode/crawl4ai) | MCP | Open-source web crawler and scraper with a hosted MCP server; the hosted cloud is optional, the core is self-hostable. |
 | [stagehand](https://github.com/browserbase/stagehand) | SDK | MIT-licensed SDK for building browser agents that navigate sites, act on pages and extract data. Needs your own LLM API key (Anthropic for Claude); the Browserbase cloud is optional and paid. |
+| [chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | MCP | Google's MCP server that lets Claude debug, automate and profile a live Chrome browser. Usage stats are on by default (opt out with a flag) and it exposes page content to the agent. |
 
 ### Docs Lookup
 
@@ -299,6 +310,7 @@ Polish, translate and review academic papers.
 | [last30days-skill](https://github.com/mvanhorn/last30days-skill) | plugin | Researches a topic across Reddit, X, YouTube, Hacker News and the web from the last 30 days and writes a sourced summary. Sends search queries to those platforms. |
 | [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | plugin | Skill suite that guides academic work through research, writing, review and revision with human sign-off at each stage. CC BY-NC: non-commercial use only. |
 | [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | skill | Library of 177 scientific skills for biology, chemistry, medicine and data analysis, plus guides to 100+ databases. Works across agents, Claude Code included. |
+| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | app + skill | Research agent that searches the web and your files and writes a cited report; installs as a Claude skill. Free code, but needs your own OpenAI and Tavily keys (about $0.40 a run). |
 
 [↑ Contents](#contents)
 
@@ -329,6 +341,7 @@ Where to find more.
 | [awesome-design-skills](https://github.com/bergside/awesome-design-skills) | list | Curated registry of 67 design-system skill files (each with SKILL.md and DESIGN.md) that you pull into a project with `npx typeui.sh pull`. |
 | [wshobson/agents](https://github.com/wshobson/agents) | plugin marketplace | Marketplace of 94 plugins (202 agents, 185 skills, 105 commands) for Claude Code covering development, review, testing and infrastructure. |
 | [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) | collection | Open-source library of 411 skills, plugins and agent skills for Claude Code across engineering, marketing, product, compliance and finance, with Python CLI helper scripts. |
+| [agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills) | collection | About 2,950 installable skills for Claude Code and other agents, with a setup guide. Some bundled third-party skills use paid APIs, and it includes offensive-security bundles; run the installer with `--dry-run` first. |
 | [top-claude-code-skills](https://github.com/selan-ai/top-claude-code-skills) | ranking | Daily-updated ranking of the top 15 Claude Code skills by GitHub stars (all time, this week, this month), each described from its own README. |
 | [awesome-claude-code-skills](https://github.com/itgoyo/awesome-claude-code-skills) | list | Curated list of the top 200 GitHub repositories by stars in the Claude Code ecosystem: official tools, agent frameworks, skills, memory systems and MCP servers. |
 | [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | list | Large curated list of MCP servers. |

@@ -8,6 +8,7 @@ Columns: **Name** (linked to the repo or URL) · **Type** · **What it does** (o
 
 Rules:
 - Free or freemium only. No paid-only tools or MCP servers. Optional paid tiers are fine if the core is free.
+- No MCP servers that only connect Claude to one company's own product or account. List tools that work on their own, on your machine or on any site.
 - Tools that also work with other agents are fine, as long as they clearly support Claude.
 - Only list things you've used or read the README of. No paid ads, no dead links.
 - If an entry fits two categories, put it in the main one and add a cross-link in the other.

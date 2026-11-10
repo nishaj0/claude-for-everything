@@ -102,7 +102,6 @@ Make agents produce better-looking interfaces.
 | [awesome-design-skills](https://github.com/bergside/awesome-design-skills) | list | Curated registry of 67 design-system skill files (each with SKILL.md and DESIGN.md) that you pull into a project with `npx typeui.sh pull`. |
 | [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) | skill | Skill that generates a tailored project design system from searchable databases of UI styles, colour palettes and font pairings, using a reasoning engine over 192 rules. |
 | [taste-skill](https://github.com/Leonxlnx/taste-skill) | skill | Skill that gives the agent an art direction, real credited photos and a real-browser check so the websites and app screens it builds look less generic. |
-| [magic-mcp](https://github.com/21st-dev/magic-mcp) | MCP | Searches React/Tailwind components and generates UI from your editor. Needs a free API key. |
 | [frontend-slides](https://github.com/zarazhangrui/frontend-slides) | plugin | A free Claude Code plugin that generates single-file HTML presentations from scratch or from PowerPoint files. |
 | [garden-skills](https://github.com/ConardLi/garden-skills) | skill | A free MIT-licensed collection of skills for web design, image generation, video and knowledge-base retrieval, tested with Claude Code and Claude.ai. |
 | [hallmark](https://github.com/Nutlope/hallmark) | skill | A free MIT-licensed design skill from Together AI that helps Claude Code build web pages that do not look AI-generated. |
@@ -206,7 +205,6 @@ Add structure to how the agent plans, reviews and tests, so it stops jumping str
 | [pm-skills](https://github.com/phuryn/pm-skills) | plugin | Marketplace of 69 product-management skills and 42 chained workflows covering discovery, strategy, PRDs, launch and metrics. |
 | [elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) | plugin | Plugin for designing and reviewing software specs: an "elephant" drafts with your project context, then "goldfish" reviewers check it with fresh eyes. Needs a session that can start subagents. |
 | [cc-switch](https://github.com/farion1231/cc-switch) | app | Desktop app that switches API providers and manages MCP servers, skills and prompts for Claude Code, Claude Desktop and other agents. Rewrites your agent config files and holds API keys; the README carries paid relay-service ads. |
-| [github-mcp-server](https://github.com/github/github-mcp-server) | MCP | GitHub's MCP server that lets Claude read repos, manage issues and pull requests, and check Actions and security alerts. Needs a GitHub token and can write to repos; a read-only mode is available. |
 | [orca](https://github.com/stablyai/orca) | app | Desktop app that runs Claude Code and other coding agents in parallel, each in its own git worktree. MIT licensed; collects anonymous usage data unless you opt out. |
 | [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | tutorial | 17-lesson Python tutorial on building a Claude Code-style agent harness from scratch. Needs your own Anthropic API key; the lesson agents run shell commands. |
 | [n8n-mcp](https://github.com/czlonkowski/n8n-mcp) | MCP | MCP server that gives Claude n8n node docs, templates and workflow tools. Telemetry is on by default (opt-out); with your n8n key it can edit and run workflows. |
@@ -279,7 +277,6 @@ Let the agent read, search, browse and scrape the web.
 | [crawl4ai](https://github.com/unclecode/crawl4ai) | MCP | Open-source web crawler and scraper with a hosted MCP server; the hosted cloud is optional, the core is self-hostable. |
 | [stagehand](https://github.com/browserbase/stagehand) | SDK | MIT-licensed SDK for building browser agents that navigate sites, act on pages and extract data. Needs your own LLM API key (Anthropic for Claude); the Browserbase cloud is optional and paid. |
 | [chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp) | MCP | Google's MCP server that lets Claude debug, automate and profile a live Chrome browser. Usage stats are on by default (opt out with a flag) and it exposes page content to the agent. |
-| [apify-mcp-server](https://github.com/apify/apify-mcp-server) | MCP | Apify's MCP server for searching and running scraping Actors. Freemium: $5 of free usage a month, then paid runs. Telemetry is on by default. |
 
 ### Docs Lookup
 

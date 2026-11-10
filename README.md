@@ -15,7 +15,7 @@ A community-maintained list of skills, plugins, MCP servers and rule files for C
 - **[Dev](#dev)**: [Workflow & Planning](#workflow--planning) · [Multi-Agent & Orchestration](#multi-agent--orchestration) · [Setup, Rules & Guides](#setup-rules--guides) · [Code Review & Safety](#code-review--safety) · [Token Saving & Cost](#token-saving--cost) · [Memory & Context](#memory--context) · [Browser & Computer Control](#browser--computer-control) · [Docs & Databases](#docs--databases)
 - **[Games](#games)**: [Game Dev](#game-dev) · [Modding](#modding)
 - **[Writing](#writing)**: [Research Writing](#research-writing) · [Style & Fiction](#style--fiction)
-- **[Productivity](#productivity)**: [Notes & Knowledge](#notes--knowledge) · [Product & Business](#product--business)
+- **[Productivity](#productivity)**: [Notes & Knowledge](#notes--knowledge) · [Product & Business](#product--business) · [Smart Home](#smart-home)
 - **[Career](#career)**: [Job Search](#job-search)
 - **[Discovery](#discovery)**: [Skill & Plugin Directories](#skill--plugin-directories)
 - **[Standalone](#standalone)**: [Media Tools](#media-tools) · [Local Models & OCR](#local-models--ocr) · [Agents & Harnesses](#agents--harnesses) · [Apps & Tools](#apps--tools) · [Examples & Demos](#examples--demos)
@@ -37,6 +37,7 @@ Not sure where to begin? Eight picks, one per area:
 
 ## Recently added
 
+- [ha-mcp](https://github.com/homeassistant-ai/ha-mcp): control and set up Home Assistant. ([Smart Home](#smart-home))
 - [mcp2cli](https://github.com/knowsuchagency/mcp2cli): turn any MCP server or API into a CLI. ([Token Saving & Cost](#token-saving--cost))
 - [mcporter](https://github.com/openclaw/mcporter): call MCP servers from scripts and the terminal. ([Apps & Tools](#apps--tools))
 - [raea](https://github.com/shinyobjectz/raea): videos, motion graphics, 3D and games as code. ([Motion Graphics](#motion-graphics))
@@ -44,7 +45,6 @@ Not sure where to begin? Eight picks, one per area:
 - [universal-modder](https://github.com/rehan-remade/universal-modder): mod PC games you own. ([Modding](#modding))
 - [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian): an Obsidian wiki built from your sources. ([Notes & Knowledge](#notes--knowledge))
 - [cognee](https://github.com/topoteretes/cognee): a knowledge-graph memory layer. ([Memory & Context](#memory--context))
-- [orca](https://github.com/stablyai/orca): many coding agents in parallel. ([Multi-Agent & Orchestration](#multi-agent--orchestration))
 
 ## Video
 
@@ -410,6 +410,14 @@ Skills for product managers and founders.
 | [skills](https://github.com/slavingia/skills) | plugin | Ten skills based on The Minimalist Entrepreneur that walk you through finding a community, validating an idea, building an MVP, pricing and growing a business. |
 
 [↑ Contents](#contents)
+
+### Smart Home
+
+Control and set up your home with Claude.
+
+| Name | Type | What it does |
+|---|---|---|
+| [ha-mcp](https://github.com/homeassistant-ai/ha-mcp) | MCP server | Lets Claude control and set up Home Assistant: devices, automations, scenes, dashboards and config, through 87 tools. It runs with an administrator token, so it can change or delete automations and control devices; use a dedicated account. |
 
 ## Career
 

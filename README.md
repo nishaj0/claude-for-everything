@@ -37,14 +37,14 @@ Not sure where to begin? Eight picks, one per area:
 
 ## Recently added
 
-- [tstack](https://github.com/t3dotgg/tstack): Theo's PR skills, from change to merged PR. ([Workflow & Planning](#workflow--planning))
-- [agent-memory](https://github.com/tigerless-labs/agent-memory): local Markdown memory shared across agents. ([Memory & Context](#memory--context))
-- [oil-ui](https://github.com/oil-oil/oil-ui): a UI design skill that compares directions side by side. ([UI](#ui))
-- [ha-mcp](https://github.com/homeassistant-ai/ha-mcp): control and set up Home Assistant. ([Smart Home](#smart-home))
-- [mcp2cli](https://github.com/knowsuchagency/mcp2cli): turn any MCP server or API into a CLI. ([Token Saving & Cost](#token-saving--cost))
-- [mcporter](https://github.com/openclaw/mcporter): call MCP servers from scripts and the terminal. ([Apps & Tools](#apps--tools))
-- [raea](https://github.com/shinyobjectz/raea): videos, motion graphics, 3D and games as code. ([Motion Graphics](#motion-graphics))
-- [Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep): autonomous research loops. ([Research Writing](#research-writing))
+- [claude-hud](https://github.com/jarrodwatts/claude-hud): a live status bar for context, limits and agents. ([Token Saving & Cost](#token-saving--cost))
+- [claude-code-router](https://github.com/musistudio/claude-code-router): route Claude Code to the providers you choose. ([Token Saving & Cost](#token-saving--cost))
+- [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents): 100+ ready-made subagents. ([Multi-Agent & Orchestration](#multi-agent--orchestration))
+- [claude-code-tips](https://github.com/ykdojo/claude-code-tips): 45+ tips for Claude Code. ([Setup, Rules & Guides](#setup-rules--guides))
+- [claude-code-infrastructure-showcase](https://github.com/diet103/claude-code-infrastructure-showcase): skills that activate through hooks. ([Setup, Rules & Guides](#setup-rules--guides))
+- [Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers): turn docs and repos into skills. ([Docs & Databases](#docs--databases))
+- [opcode](https://github.com/winfunc/opcode): a desktop GUI for Claude Code. ([Apps & Tools](#apps--tools))
+- [happy](https://github.com/slopus/happy): continue Claude Code sessions from your phone. ([Apps & Tools](#apps--tools))
 
 ## Video
 
@@ -244,6 +244,7 @@ Run several agents or models at once and keep them coordinated.
 | [claude-octopus](https://github.com/nyldn/claude-octopus) | plugin | Runs Claude, Codex, Gemini and other models on the same task and cross-checks them. Setup installs the Codex and Qwen CLIs globally; other providers need their own keys and can cost money. |
 | [orca](https://github.com/stablyai/orca) | app | Desktop app that runs Claude Code and other coding agents in parallel, each in its own git worktree. MIT licensed; collects anonymous usage data unless you opt out. |
 | [CLI-Anything](https://github.com/HKUDS/CLI-Anything) | plugin | Claude Code plugin marketplace that generates agent-usable command-line interfaces for existing software so Claude can drive it. Runs commands on your machine. |
+| [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | collection | MIT collection of 100+ specialised Claude Code subagents, installable as plugins. The README carries sponsor listings; review each subagent's tool permissions before use. |
 
 ### Setup, Rules & Guides
 
@@ -260,6 +261,8 @@ Configure Claude Code, learn how it works, and drop in rules files.
 | [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | tutorial | 17-lesson Python tutorial on building a Claude Code-style agent harness from scratch. Needs your own Anthropic API key; the lesson agents run shell commands. |
 | [MCPJungle](https://github.com/mcpjungle/MCPJungle) | MCP | Self-hosted MCP gateway: register your MCP servers once and connect Claude to a single endpoint. Holds the credentials for those servers. |
 | [i-have-adhd](https://github.com/ayghri/i-have-adhd) | skill | Small skill that makes Claude lead with the next action, number its steps and drop filler, installable as a Claude Code plugin. |
+| [claude-code-tips](https://github.com/ykdojo/claude-code-tips) | guide + plugin | 45+ tips for getting more from Claude Code, with a custom status line and the dx plugin of everyday dev skills. It shows running with permission prompts off inside a container, which is risky outside one. |
+| [claude-code-infrastructure-showcase](https://github.com/diet103/claude-code-infrastructure-showcase) | reference | MIT reference library of skills that auto-activate through hooks, with example agents and rules to copy into your own project. Not a runnable app; optional AI matching needs your own Gemini key. |
 
 ### Code Review & Safety
 
@@ -280,9 +283,11 @@ Spend fewer tokens or dollars, and see where they go.
 | [caveman](https://github.com/JuliusBrussee/caveman) | skill + CLI | Skill and CLI that make the agent answer tersely in caveman style and shrink logs and tool output before the model reads them, to cut tokens. |
 | [TokenEconomizer](https://github.com/microsoft/TokenEconomizer) | CLI | Microsoft Research tool that learns from past sessions in a repository to cut coding-agent cost (micro-skills, tool pruning, failure-loop intervention); reports 18.4-30.9% lower mean cost on SWE-Bench. |
 | [9router](https://github.com/decolua/9router) | router | Local router that connects Claude Code and other coding tools to 40+ AI providers with auto-fallback and token trimming of tool output. |
+| [claude-code-router](https://github.com/musistudio/claude-code-router) | router | Local model gateway that routes Claude Code and other coding agents to the providers you choose, with failover and request logs. It holds your API keys and sends your prompts to whichever provider you pick. |
 | [codegraph](https://github.com/colbymchenry/codegraph) | MCP server | Local code knowledge graph exposed over MCP that auto-syncs on every file change. |
 | [gemini-mcp-tool](https://github.com/jamubc/gemini-mcp-tool) | MCP server | MCP server that lets Claude call the Gemini CLI to use Gemini's large context window for analyzing big files. |
 | [CodeBurn](https://codeburn.app) | CLI | Free, open-source, local-first tracker of AI coding token usage and cost across 42 tools, broken down by model, project and task. |
+| [claude-hud](https://github.com/jarrodwatts/claude-hud) | plugin | MIT Claude Code plugin that shows context usage, rate limits, active tools, running agents and todo progress below your input. Its logic runs in a permission-restricted Node process. |
 | [context-mode](https://github.com/mksglu/context-mode) | plugin | A free local Claude Code plugin and MCP server that keeps tool output out of the context window using a sandbox and SQLite full-text search. |
 | [rtk](https://github.com/rtk-ai/rtk) | app | Rust CLI proxy that compresses command output before it reaches Claude to cut token use. Installs a Claude Code hook; the CLI is Apache-2.0 but its engine folder is BUSL-1.1 (source-available). |
 | [headroom](https://github.com/headroomlabs-ai/headroom) | app | Compression layer that shrinks tool output, logs and files before they reach Claude, usable as a wrapper, proxy or MCP server. Telemetry can be turned off; a paid Teams offering is separate. |
@@ -338,6 +343,7 @@ Give the agent current documentation and a way to query your databases.
 | [context7](https://github.com/upstash/context7) | MCP server + plugin | Pulls up-to-date, version-specific library documentation and code examples into the agent's context so generated code matches the library versions you use. |
 | [pg-aiguide](https://github.com/timescale/pg-aiguide) | plugin + MCP | Postgres best-practice skills and search over the Postgres and TimescaleDB manuals. The MCP is hosted by TigerData, so queries go to them. |
 | [dbhub](https://github.com/bytebase/dbhub) | MCP | A minimal, token-efficient MCP server that lets Claude explore and query PostgreSQL, MySQL, MariaDB, SQL Server, Oracle and SQLite databases. Runs SQL against the databases you point it at; read-only mode is available. |
+| [Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) | CLI + MCP | MIT tool that turns documentation sites, GitHub repos and PDFs into Claude skills. It scrapes the sites you point it at, so mind their terms; the optional upload uses your Anthropic API key. |
 
 
 [↑ Contents](#contents)
@@ -527,6 +533,8 @@ Full products and tools. Useful, but you run them yourself.
 | [whatsapp-mcp](https://github.com/lharries/whatsapp-mcp) | MCP | An MIT-licensed MCP server that connects your personal WhatsApp account to Claude so it can search, read and send messages. Sends messages from your WhatsApp account. |
 | [rea](https://github.com/morluto/rea) | MCP | MCP server for reverse engineering binaries, apps and runtime behavior, with Claude Code setup. Launches local analysis tools, so treat it as code-executing and security-sensitive. |
 | [mcporter](https://github.com/openclaw/mcporter) | CLI + library | Lists and calls MCP servers from a terminal or TypeScript script, imports your Claude Code and Desktop MCP configs, and can package a server as its own CLI. Handles OAuth logins and runs the servers you configure. |
+| [opcode](https://github.com/winfunc/opcode) | app | AGPL-3.0 desktop GUI for Claude Code that manages sessions and custom agents, tracks usage and manages MCP servers. Independent of Anthropic. |
+| [happy](https://github.com/slopus/happy) | app | MIT mobile, web and CLI client that runs Claude Code and other agents on your computer and lets you continue the sessions from your phone. Sessions sync through a relay server, end-to-end encrypted. |
 
 ### Examples & Demos
 

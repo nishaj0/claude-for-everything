@@ -10,7 +10,7 @@ A community-maintained list of skills, plugins, MCP servers and rule files for C
 
 - **[Video](#video)**: [Editing](#editing) · [Motion Graphics](#motion-graphics) · [Animation Styles](#animation-styles) · [Prompts](#prompts)
 - **[Audio](#audio)**: [Sound Effects](#sound-effects)
-- **[Design](#design)**: [UI](#ui) · [Diagrams](#diagrams) · [Logo & Brand](#logo--brand) · [Web Animation & 3D](#web-animation--3d)
+- **[Design](#design)**: [UI](#ui) · [Diagrams](#diagrams) · [Logo & Brand](#logo--brand) · [Web Animation & 3D](#web-animation--3d) · [3D](#3d)
 - **[Marketing](#marketing)**: [SEO](#seo) · [Social Content](#social-content) · [Sales Outreach](#sales-outreach)
 - **[Dev](#dev)**: [Workflow & Planning](#workflow--planning) · [Multi-Agent & Orchestration](#multi-agent--orchestration) · [Setup, Rules & Guides](#setup-rules--guides) · [Code Review & Safety](#code-review--safety) · [Token Saving & Cost](#token-saving--cost) · [Memory & Context](#memory--context) · [Browser & Computer Control](#browser--computer-control) · [Docs & Databases](#docs--databases)
 - **[Games](#games)**: [Game Dev](#game-dev) · [Modding](#modding)
@@ -165,8 +165,14 @@ Teach the agent to build award-style animated sites and interactive 3D.
 | [webgl-animation-skills](https://github.com/iart-ai/webgl-animation-skills) | skill | Skills for WebGL animation: GLSL fragment shaders, Three.js scene animation, and particle systems; installable as a Claude Code plugin marketplace. |
 | [anatomy](https://github.com/wheresryan22/anatomy) | skill | Claude skill that explains an idea by building it as an interactive isometric figure with many small precise parts, in SVG, WebGL or 3D. |
 | [machine-skill](https://github.com/AirsupHQ/machine-skill) | skill | Claude Code skill: `/machine a turbofan jet engine` researches the real machine and builds an interactive 3D physics simulation in one HTML file, plus a film to post. |
-| [mcp-for-blender](https://github.com/ahujasid/mcp-for-blender) | MCP | A community MCP server (formerly blender-mcp) that lets Claude Desktop and Claude Code control Blender 3D. Runs Python inside Blender; telemetry is on by default, the installer runs a curl script, and some AI 3D-model features are paid. |
 
+### 3D
+
+Let Claude drive 3D software.
+
+| Name | Type | What it does |
+|---|---|---|
+| [mcp-for-blender](https://github.com/ahujasid/mcp-for-blender) | MCP | A community MCP server (formerly blender-mcp) that lets Claude Desktop and Claude Code control Blender 3D. Runs Python inside Blender; telemetry is on by default, the installer runs a curl script, and some AI 3D-model features are paid. |
 
 [↑ Contents](#contents)
 

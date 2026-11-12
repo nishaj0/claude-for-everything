@@ -12,7 +12,7 @@ A community-maintained list of skills, plugins, MCP servers and rule files for C
 - **[Audio](#audio)**: [Sound Effects](#sound-effects)
 - **[Design](#design)**: [UI](#ui) · [Diagrams](#diagrams) · [Logo & Brand](#logo--brand) · [Web Animation & 3D](#web-animation--3d) · [3D](#3d)
 - **[Marketing](#marketing)**: [SEO](#seo) · [Social Content](#social-content) · [Sales Outreach](#sales-outreach)
-- **[Dev](#dev)**: [Workflow & Planning](#workflow--planning) · [Multi-Agent & Orchestration](#multi-agent--orchestration) · [Setup & Rules](#setup--rules) · [Guides & Learning](#guides--learning) · [Code Review & Safety](#code-review--safety) · [Token Saving & Cost](#token-saving--cost) · [Providers & Routing](#providers--routing) · [Memory & Context](#memory--context) · [Code Intelligence](#code-intelligence) · [Browser & Computer Control](#browser--computer-control) · [Docs & Databases](#docs--databases)
+- **[Dev](#dev)**: [Workflow & Planning](#workflow--planning) · [Multi-Agent & Orchestration](#multi-agent--orchestration) · [Setup & Rules](#setup--rules) · [Guides & Learning](#guides--learning) · [Code Review & Safety](#code-review--safety) · [Token Saving & Cost](#token-saving--cost) · [Providers & Routing](#providers--routing) · [Memory & Context](#memory--context) · [Code Intelligence](#code-intelligence) · [Browser & Computer Control](#browser--computer-control) · [Docs & Databases](#docs--databases) · [Publishing & Deployment](#publishing--deployment)
 - **[Games](#games)**: [Game Dev](#game-dev) · [Modding](#modding)
 - **[Writing](#writing)**: [Research Writing](#research-writing) · [Style & Fiction](#style--fiction)
 - **[Productivity](#productivity)**: [Notes & Knowledge](#notes--knowledge) · [Product & Business](#product--business) · [Smart Home](#smart-home)
@@ -364,6 +364,14 @@ Give the agent current documentation and a way to query your databases.
 | [pg-aiguide](https://github.com/timescale/pg-aiguide) | plugin + MCP | Postgres best-practice skills and search over the Postgres and TimescaleDB manuals. The MCP is hosted by TigerData, so queries go to them. |
 | [dbhub](https://github.com/bytebase/dbhub) | MCP | A minimal, token-efficient MCP server that lets Claude explore and query PostgreSQL, MySQL, MariaDB, SQL Server, Oracle and SQLite databases. Runs SQL against the databases you point it at; read-only mode is available. |
 | [Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) | CLI + MCP | MIT tool that turns documentation sites, GitHub repos and PDFs into Claude skills. It scrapes the sites you point it at, so mind their terms; the optional upload uses your Anthropic API key. |
+
+### Publishing & Deployment
+
+Publishing agent-built websites.
+
+| Name | Type | What it does |
+|---|---|---|
+| [Jumper Publisher](https://github.com/JumperMCP/jumper-publisher) | MCP server + plugin | Publishes AI-made websites to your own Cloudflare account. One-time install, zero-click workflow. |
 
 
 [↑ Contents](#contents)

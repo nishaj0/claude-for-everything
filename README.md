@@ -37,14 +37,14 @@ Not sure where to begin? Eight picks, one per area:
 
 ## Recently added
 
+- [tstack](https://github.com/t3dotgg/tstack): Theo's PR skills, from change to merged PR. ([Workflow & Planning](#workflow--planning))
+- [agent-memory](https://github.com/tigerless-labs/agent-memory): local Markdown memory shared across agents. ([Memory & Context](#memory--context))
+- [oil-ui](https://github.com/oil-oil/oil-ui): a UI design skill that compares directions side by side. ([UI](#ui))
 - [ha-mcp](https://github.com/homeassistant-ai/ha-mcp): control and set up Home Assistant. ([Smart Home](#smart-home))
 - [mcp2cli](https://github.com/knowsuchagency/mcp2cli): turn any MCP server or API into a CLI. ([Token Saving & Cost](#token-saving--cost))
 - [mcporter](https://github.com/openclaw/mcporter): call MCP servers from scripts and the terminal. ([Apps & Tools](#apps--tools))
 - [raea](https://github.com/shinyobjectz/raea): videos, motion graphics, 3D and games as code. ([Motion Graphics](#motion-graphics))
 - [Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep): autonomous research loops. ([Research Writing](#research-writing))
-- [universal-modder](https://github.com/rehan-remade/universal-modder): mod PC games you own. ([Modding](#modding))
-- [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian): an Obsidian wiki built from your sources. ([Notes & Knowledge](#notes--knowledge))
-- [cognee](https://github.com/topoteretes/cognee): a knowledge-graph memory layer. ([Memory & Context](#memory--context))
 
 ## Video
 
@@ -136,6 +136,7 @@ Make agents produce better-looking interfaces.
 | [huashu-design](https://github.com/alchaincyf/huashu-design) | skill | MIT skill that turns one prompt into animations, app prototypes, slides and infographics for Claude Code. README is Chinese-first with an English version; no telemetry, optional cloud features need your own keys. |
 | [ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) | template + command | Next.js template with a `/clone-website <url>` command that has Claude rebuild a site as a Next.js app. Copies other people's designs, so mind copyright and site terms. |
 | [design-extract](https://github.com/Manavarya09/design-extract) | CLI + plugin | Opens any URL in headless Chromium and extracts its design system as tokens, Tailwind and Figma files and a DESIGN.md. Optional `--smart` mode uses a sponsor's hosted classifier. |
+| [oil-ui](https://github.com/oil-oil/oil-ui) | skill | MIT UI design skill that studies peer products, explores several directions side by side and refines one against real screenshots. It checks ui.oiloil.org for updates and uploads nothing; set `OIL_NO_UPDATE_CHECK=1` to turn that off. |
 
 ### Diagrams
 
@@ -164,7 +165,7 @@ Teach the agent to build award-style animated sites and interactive 3D.
 | [webgl-animation-skills](https://github.com/iart-ai/webgl-animation-skills) | skill | Skills for WebGL animation: GLSL fragment shaders, Three.js scene animation, and particle systems; installable as a Claude Code plugin marketplace. |
 | [anatomy](https://github.com/wheresryan22/anatomy) | skill | Claude skill that explains an idea by building it as an interactive isometric figure with many small precise parts, in SVG, WebGL or 3D. |
 | [machine-skill](https://github.com/AirsupHQ/machine-skill) | skill | Claude Code skill: `/machine a turbofan jet engine` researches the real machine and builds an interactive 3D physics simulation in one HTML file, plus a film to post. |
-| [blender-mcp](https://github.com/ahujasid/blender-mcp) | MCP | A community MCP server that lets Claude Desktop and Claude Code control Blender 3D. Runs Python inside Blender; telemetry is on by default. |
+| [mcp-for-blender](https://github.com/ahujasid/mcp-for-blender) | MCP | A community MCP server (formerly blender-mcp) that lets Claude Desktop and Claude Code control Blender 3D. Runs Python inside Blender; telemetry is on by default, the installer runs a curl script, and some AI 3D-model features are paid. |
 
 
 [↑ Contents](#contents)
@@ -223,6 +224,7 @@ Add structure to how the agent plans, reviews and tests, so it stops jumping str
 | [skills](https://github.com/humanlayer/skills) | skill | An MIT-licensed set of Claude Code skills from HumanLayer for research, planning, implementation and pull request workflows. Some skills create pull requests. |
 | [elephant-goldfish-model](https://github.com/google/elephant-goldfish-model) | plugin | Plugin for designing and reviewing software specs: an "elephant" drafts with your project context, then "goldfish" reviewers check it with fresh eyes. Needs a session that can start subagents. |
 | [Jeffallan/claude-skills](https://github.com/Jeffallan/claude-skills) | plugin | 67 skills for languages, frameworks, DevOps and security, plus 9 epic workflow commands that need an Atlassian MCP server. |
+| [tstack](https://github.com/t3dotgg/tstack) | skills | Theo's everyday PR skills for Claude Code and Codex: full-send takes a change to a merged PR, plus council review, babysit-pr and takeover. Needs the GitHub CLI; full-send can merge without you watching, and council and sol-loop call other providers' models. |
 | [n8n-mcp](https://github.com/czlonkowski/n8n-mcp) | MCP | MCP server that gives Claude n8n node docs, templates and workflow tools. Telemetry is on by default (opt-out); with your n8n key it can edit and run workflows. |
 
 ### Multi-Agent & Orchestration
@@ -301,6 +303,7 @@ Stop the agent forgetting everything between sessions. Obsidian tools are under 
 | [serena](https://github.com/oraios/serena) | MCP | Toolkit that gives Claude IDE-style semantic code search, editing and refactoring. GPL-3.0; an optional JetBrains plugin is paid. |
 | [book-to-skill](https://github.com/virgiliojr94/book-to-skill) | skill | Turns a technical book PDF into a chaptered skill Claude can consult on demand. Don't redistribute skills made from copyrighted books. |
 | [cognee](https://github.com/topoteretes/cognee) | plugin | Memory layer that turns documents, code and chats into a knowledge graph agents can search across sessions; installs as a Claude Code plugin and runs locally. Using an LLM key sends data to that provider; Cognee Cloud is an optional paid service. |
+| [agent-memory](https://github.com/tigerless-labs/agent-memory) | CLI + skill | MIT long-term memory for Claude Code and Codex: plain Markdown files are the source of truth, retrieval is local with no API key, and writes fire at conversation boundaries. |
 
 ### Browser & Computer Control
 

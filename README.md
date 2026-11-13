@@ -37,6 +37,7 @@ Not sure where to begin? Eight picks, one per area:
 
 ## Recently added
 
+- [modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance): current web-platform guides for the agent. ([Docs & Databases](#docs--databases))
 - [claude-hud](https://github.com/jarrodwatts/claude-hud): a live status bar for context, limits and agents. ([Token Saving & Cost](#token-saving--cost))
 - [claude-code-router](https://github.com/musistudio/claude-code-router): route Claude Code to the providers you choose. ([Providers & Routing](#providers--routing))
 - [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents): 100+ ready-made subagents. ([Multi-Agent & Orchestration](#multi-agent--orchestration))
@@ -44,7 +45,6 @@ Not sure where to begin? Eight picks, one per area:
 - [claude-code-infrastructure-showcase](https://github.com/diet103/claude-code-infrastructure-showcase): skills that activate through hooks. ([Setup & Rules](#setup--rules))
 - [Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers): turn docs and repos into skills. ([Docs & Databases](#docs--databases))
 - [opcode](https://github.com/winfunc/opcode): a desktop GUI for Claude Code. ([Clients & UIs](#clients--uis))
-- [happy](https://github.com/slopus/happy): continue Claude Code sessions from your phone. ([Clients & UIs](#clients--uis))
 
 ## Video
 
@@ -364,6 +364,7 @@ Give the agent current documentation and a way to query your databases.
 | [pg-aiguide](https://github.com/timescale/pg-aiguide) | plugin + MCP | Postgres best-practice skills and search over the Postgres and TimescaleDB manuals. The MCP is hosted by TigerData, so queries go to them. |
 | [dbhub](https://github.com/bytebase/dbhub) | MCP | A minimal, token-efficient MCP server that lets Claude explore and query PostgreSQL, MySQL, MariaDB, SQL Server, Oracle and SQLite databases. Runs SQL against the databases you point it at; read-only mode is available. |
 | [Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers) | CLI + MCP | MIT tool that turns documentation sites, GitHub repos and PDFs into Claude skills. It scrapes the sites you point it at, so mind their terms; the optional upload uses your Anthropic API key. |
+| [modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | plugin + skill | Apache-2.0 skill and Claude Code plugin from the Chrome, Edge, Firefox and MDN teams that gives the agent current web-platform guides and browser-compatibility data, plus a scanner for legacy code. Installs through npx or the plugin marketplace. |
 
 
 [↑ Contents](#contents)

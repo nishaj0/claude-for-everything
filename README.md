@@ -37,6 +37,7 @@ Not sure where to begin? Eight picks, one per area:
 
 ## Recently added
 
+- [rederive](https://github.com/EricJujianZou/rederive): learn a codebase by re-deriving it yourself. ([Guides & Learning](#guides--learning))
 - [modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance): current web-platform guides for the agent. ([Docs & Databases](#docs--databases))
 - [claude-hud](https://github.com/jarrodwatts/claude-hud): a live status bar for context, limits and agents. ([Token Saving & Cost](#token-saving--cost))
 - [claude-code-router](https://github.com/musistudio/claude-code-router): route Claude Code to the providers you choose. ([Providers & Routing](#providers--routing))
@@ -44,7 +45,6 @@ Not sure where to begin? Eight picks, one per area:
 - [claude-code-tips](https://github.com/ykdojo/claude-code-tips): 45+ tips for Claude Code. ([Guides & Learning](#guides--learning))
 - [claude-code-infrastructure-showcase](https://github.com/diet103/claude-code-infrastructure-showcase): skills that activate through hooks. ([Setup & Rules](#setup--rules))
 - [Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers): turn docs and repos into skills. ([Docs & Databases](#docs--databases))
-- [opcode](https://github.com/winfunc/opcode): a desktop GUI for Claude Code. ([Clients & UIs](#clients--uis))
 
 ## Video
 
@@ -267,6 +267,7 @@ Learn how Claude Code works and get more out of it.
 | [claude-code-guide](https://github.com/zebbern/claude-code-guide) | guide + skills | Community guide to Claude Code setup, commands, hooks, MCP and agents, with a 70+ skill and agent pack. |
 | [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | tutorial | 17-lesson Python tutorial on building a Claude Code-style agent harness from scratch. Needs your own Anthropic API key; the lesson agents run shell commands. |
 | [claude-code-tips](https://github.com/ykdojo/claude-code-tips) | guide + plugin | 45+ tips for getting more from Claude Code, with a custom status line and the dx plugin of everyday dev skills. It shows running with permission prompts off inside a container, which is risky outside one. |
+| [rederive](https://github.com/EricJujianZou/rederive) | skill | Teaches you a codebase by asking questions until you design it yourself from first principles, without explaining. Runs locally with no telemetry. |
 
 ### Code Review & Safety
 

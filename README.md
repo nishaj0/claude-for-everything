@@ -9,16 +9,16 @@ A community-maintained list of skills, plugins, MCP servers and rule files for C
 ## Contents
 
 - **[Video](#video)**: [Editing](#editing) · [Motion Graphics](#motion-graphics) · [Animation Styles](#animation-styles) · [Prompts](#prompts)
-- **[Audio](#audio)**: [Sound Effects](#sound-effects)
+- **[Audio](#audio)**: [Sound Effects](#sound-effects) · [Speech & Voice](#speech--voice)
 - **[Design](#design)**: [UI](#ui) · [Diagrams](#diagrams) · [Logo & Brand](#logo--brand) · [Image & Asset Generation](#image--asset-generation) · [Web Animation & 3D](#web-animation--3d) · [3D](#3d)
 - **[Marketing](#marketing)**: [SEO](#seo) · [Social Content](#social-content) · [Sales Outreach](#sales-outreach)
-- **[Dev](#dev)**: [Workflow & Planning](#workflow--planning) · [Multi-Agent & Orchestration](#multi-agent--orchestration) · [Setup & Rules](#setup--rules) · [Guides & Learning](#guides--learning) · [Code Review & Safety](#code-review--safety) · [Token Saving & Cost](#token-saving--cost) · [Providers & Routing](#providers--routing) · [Memory & Context](#memory--context) · [Code Intelligence](#code-intelligence) · [Browser & Computer Control](#browser--computer-control) · [Docs & Databases](#docs--databases)
+- **[Dev](#dev)**: [Workflow & Planning](#workflow--planning) · [Multi-Agent & Orchestration](#multi-agent--orchestration) · [Agents & Harnesses](#agents--harnesses) · [Clients & UIs](#clients--uis) · [Setup & Rules](#setup--rules) · [Guides & Learning](#guides--learning) · [Code Review & Safety](#code-review--safety) · [Token Saving & Cost](#token-saving--cost) · [Providers & Routing](#providers--routing) · [Memory & Context](#memory--context) · [Code Intelligence](#code-intelligence) · [Browser & Computer Control](#browser--computer-control) · [Docs & Databases](#docs--databases) · [Local Models & OCR](#local-models--ocr) · [MCP Tools](#mcp-tools) · [Reverse Engineering](#reverse-engineering)
 - **[Games](#games)**: [Game Dev](#game-dev) · [Modding](#modding)
 - **[Writing](#writing)**: [Research Writing](#research-writing) · [Style & Fiction](#style--fiction)
-- **[Productivity](#productivity)**: [Notes & Knowledge](#notes--knowledge) · [Product & Business](#product--business) · [Smart Home](#smart-home)
+- **[Research](#research)**: [Web Research](#web-research) · [Investigation & Analysis](#investigation--analysis)
+- **[Productivity](#productivity)**: [Notes & Knowledge](#notes--knowledge) · [Product & Business](#product--business) · [Smart Home](#smart-home) · [Messaging](#messaging)
 - **[Career](#career)**: [Job Search](#job-search)
 - **[Discovery](#discovery)**: [Skill & Plugin Directories](#skill--plugin-directories)
-- **[Standalone](#standalone)**: [Media Tools](#media-tools) · [Local Models & OCR](#local-models--ocr) · [Agents & Harnesses](#agents--harnesses) · [Clients & UIs](#clients--uis) · [Apps & Tools](#apps--tools) · [Examples & Demos](#examples--demos)
 - **More**: [Start here](#start-here) · [Recently added](#recently-added) · [Types](#types-used-in-tables) · [Security](#security) · [Contributing](#contributing)
 
 
@@ -39,7 +39,7 @@ Not sure where to begin? Eight picks, one per area:
 
 - [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion): art styles turned into animation made in code. ([Animation Styles](#animation-styles))
 - [scenario-labs/skills](https://github.com/scenario-labs/skills): generate images, video, audio and 3D from the agent. ([Image & Asset Generation](#image--asset-generation))
-- [geo-sleuth](https://github.com/Oldcircle/geo-sleuth): find where a photo was taken. ([Apps & Tools](#apps--tools))
+- [geo-sleuth](https://github.com/Oldcircle/geo-sleuth): find where a photo was taken. ([Investigation & Analysis](#investigation--analysis))
 - [blender-skills](https://github.com/EL4CTEO/blender-skills): 28 Blender workflow skills. ([3D](#3d))
 - [coucou](https://github.com/Louis-CFM/coucou): agent sessions and permission prompts in your Mac notch. ([Clients & UIs](#clients--uis))
 - [rederive](https://github.com/EricJujianZou/rederive): learn a codebase by re-deriving it yourself. ([Guides & Learning](#guides--learning))
@@ -50,7 +50,7 @@ Not sure where to begin? Eight picks, one per area:
 
 ### Editing
 
-Let an agent cut, caption and assemble video from your footage.
+Let an agent cut, caption and assemble video from your footage. A few entries are standalone apps rather than Claude add-ons.
 
 | Name | Type | What it does |
 |---|---|---|
@@ -60,6 +60,10 @@ Let an agent cut, caption and assemble video from your footage.
 | [OpenMontage](https://github.com/calesthio/OpenMontage) | app | An AGPL-3.0 open-source agentic video production system with 12 pipelines and 100+ tools that turns Claude Code into a video studio. Optional paid API keys; AGPL-3.0. |
 | [ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) | MCP | A free MIT-licensed local video editor for coding agents with 42 FFmpeg tools and an MCP server that works with Claude Code. |
 | [claude-video-vision](https://github.com/jordanrendric/claude-video-vision) | plugin | Claude Code plugin that gives Claude video frames (via ffmpeg) and audio transcripts so it can watch videos. Free with local Whisper; cloud backends send audio to Google or OpenAI. |
+| [AI-Youtube-Shorts-Generator](https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator) | app | Open-source Opus Clip alternative: an LLM picks highlights from long YouTube videos, Whisper transcribes, and clips are auto-cropped to 9:16 shorts. |
+| [hotclip](https://github.com/xixihhhh/hotclip) | app | Free open-source local AI clipper that cuts long videos, livestream replays and podcasts into vertical 9:16 shorts with auto subtitles; publishing targets Chinese platforms. |
+| [Rhubarb Lip Sync](https://github.com/DanielSWolf/rhubarb-lip-sync) | CLI | Command-line tool that automatically creates 2D mouth animation (mouth shapes) from voice recordings for games and cartoons. |
+| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | CLI | Feature-rich command-line audio/video downloader (Unlicense). |
 
 ### Motion Graphics
 
@@ -114,6 +118,17 @@ Fix the weak point of agent-made video: its sound effects.
 Used together: Openverse to find sounds, real-sfx to place them, earshot to review the result.
 
 
+### Speech & Voice
+
+Speech models and tools for voice, dubbing and transcription. They run on their own and aren't Claude skills.
+
+| Name | Type | What it does |
+|---|---|---|
+| [MisoTTS](https://github.com/MisoLabsAI/MisoTTS) | model | Miso TTS 8B, an open 8-billion-parameter expressive text-to-speech model with a hosted demo and local setup via uv. |
+| [VoiceStudio](https://github.com/debpalash/voicestudio) | app | Open-source (AGPL-3.0) local voice studio for cloning, designing, dubbing, dictating and transcribing voices in 646 languages, positioned as an ElevenLabs alternative. |
+| [fish-speech](https://github.com/fishaudio/fish-speech) | model | Open-source text-to-speech and voice cloning model from Fish Audio. |
+| [WhisperX](https://github.com/m-bain/whisperx) | CLI | Automatic speech recognition with word-level timestamps and speaker diarization, built on Whisper. |
+
 [↑ Contents](#contents)
 
 ## Design
@@ -138,6 +153,7 @@ Make agents produce better-looking interfaces.
 | [ai-website-cloner-template](https://github.com/JCodesMore/ai-website-cloner-template) | template + command | Next.js template with a `/clone-website <url>` command that has Claude rebuild a site as a Next.js app. Copies other people's designs, so mind copyright and site terms. |
 | [design-extract](https://github.com/Manavarya09/design-extract) | CLI + plugin | Opens any URL in headless Chromium and extracts its design system as tokens, Tailwind and Figma files and a DESIGN.md. Optional `--smart` mode uses a sponsor's hosted classifier. |
 | [oil-ui](https://github.com/oil-oil/oil-ui) | skill | MIT UI design skill that studies peer products, explores several directions side by side and refines one against real screenshots. It checks ui.oiloil.org for updates and uploads nothing; set `OIL_NO_UPDATE_CHECK=1` to turn that off. |
+| [open-codesign](https://github.com/OpenCoworkAI/open-codesign) | app | Open-source (MIT) Claude Design alternative that turns prompts into prototypes, slides or PDFs; multi-model, bring your own key, local-first. |
 
 ### Diagrams
 
@@ -157,11 +173,12 @@ Make agents produce better-looking interfaces.
 
 ### Image & Asset Generation
 
-Have the agent make images, video, audio and 3D assets.
+Have the agent make and improve images, video, audio and 3D assets.
 
 | Name | Type | What it does |
 |---|---|---|
 | [scenario-labs/skills](https://github.com/scenario-labs/skills) | collection | MIT agent skills that teach Claude to make images, video, audio, textures and 3D assets through the Scenario MCP server, plus expert skills for Blender, Maya, Unreal, Unity, Godot and Roblox Studio. Generation runs on your Scenario account and can cost credits; the expert skills only need the app. |
+| [upscayl](https://github.com/upscayl/upscayl) | desktop app | Free and open-source AI image upscaler for Linux, macOS and Windows. |
 
 ### Web Animation & 3D
 
@@ -177,12 +194,13 @@ Teach the agent to build award-style animated sites and interactive 3D.
 
 ### 3D
 
-Let Claude drive 3D software and teach it Blender workflows.
+Let Claude drive 3D software, teach it Blender workflows, and find 3D assets.
 
 | Name | Type | What it does |
 |---|---|---|
 | [mcp-for-blender](https://github.com/ahujasid/mcp-for-blender) | MCP | A community MCP server (formerly blender-mcp) that lets Claude Desktop and Claude Code control Blender 3D. Runs Python inside Blender; telemetry is on by default, the installer runs a curl script, and some AI 3D-model features are paid. |
 | [blender-skills](https://github.com/EL4CTEO/blender-skills) | plugin | MIT plugin of 28 Blender skills covering modeling, UVs, texturing, rigging, animation, rendering and export, for Claude Code and other agents. Built for Blender 5.2 LTS or newer. |
+| [NVIDIA SimReady Central](https://huggingface.co/spaces/nvidia/simready-central) | app | NVIDIA Hugging Face Space for semantic search of physics-ready OpenUSD 3D assets with RTX simulation previews. |
 
 [↑ Contents](#contents)
 
@@ -195,8 +213,7 @@ Let Claude drive 3D software and teach it Blender workflows.
 | [claude-seo](https://github.com/AgriciDaniel/claude-seo) | plugin | A free MIT-licensed Claude Code plugin that audits technical SEO, content quality, structured data and AI search readiness. |
 | [marketingskills](https://github.com/coreyhaines31/marketingskills) | skill | A free MIT-licensed collection of marketing skills for Claude Code covering conversion optimization, copywriting, SEO and analytics. |
 | [claude-blog](https://github.com/AgriciDaniel/claude-blog) | plugin | Claude Code plugin that researches, writes, SEO-checks and reviews blog posts, with 32 skills and 5 agents. Free on your Claude plan; optional paid Gemini for images. Install v2.3.0 or later. |
-
-The standalone [open-seo](#apps--tools) (Semrush/Ahrefs alternative) is an app, not a plugin.
+| [open-seo](https://github.com/every-app/open-seo) | app | Open-source (MIT) alternative to Semrush and Ahrefs for SEO. |
 
 ### Social Content
 
@@ -254,6 +271,29 @@ Run several agents or models at once and keep them coordinated.
 | [claude-octopus](https://github.com/nyldn/claude-octopus) | plugin | Runs Claude, Codex, Gemini and other models on the same task and cross-checks them. Setup installs the Codex and Qwen CLIs globally; other providers need their own keys and can cost money. |
 | [CLI-Anything](https://github.com/HKUDS/CLI-Anything) | plugin | Claude Code plugin marketplace that generates agent-usable command-line interfaces for existing software so Claude can drive it. Runs commands on your machine. |
 | [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | collection | MIT collection of 100+ specialised Claude Code subagents, installable as plugins. The README carries sponsor listings; review each subagent's tool permissions before use. |
+
+### Agents & Harnesses
+
+Separate agents you run yourself instead of adding them to Claude.
+
+| Name | Type | What it does |
+|---|---|---|
+| [jcode](https://github.com/1jehuang/jcode) | agent harness | High-performance coding agent harness written in Rust, built to run many agents in parallel with low RAM use (MIT). |
+| [hermes-agent](https://github.com/NousResearch/hermes-agent) | agent | Nous Research's open-source agent that grows with you (MIT). |
+| [paperclip](https://github.com/paperclipai/paperclip) | app | Open-source (MIT) app for managing teams of AI agents at work. |
+| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | bot | Open-source Grok Bot alternative with a virtual machine the bots can use (Apache-2.0). |
+
+### Clients & UIs
+
+Desktop and mobile apps that sit on top of Claude Code.
+
+| Name | Type | What it does |
+|---|---|---|
+| [orca](https://github.com/stablyai/orca) | app | Desktop app that runs Claude Code and other coding agents in parallel, each in its own git worktree. MIT licensed; collects anonymous usage data unless you opt out. |
+| [clauding](https://github.com/nishaj0/clauding) | app | Discord Rich Presence for Claude Code and the Claude desktop app: status, model and live token counts. |
+| [opcode](https://github.com/winfunc/opcode) | app | AGPL-3.0 desktop GUI for Claude Code that manages sessions and custom agents, tracks usage and manages MCP servers. Independent of Anthropic. |
+| [happy](https://github.com/slopus/happy) | app | MIT mobile, web and CLI client that runs Claude Code and other agents on your computer and lets you continue the sessions from your phone. Sessions sync through a relay server, end-to-end encrypted. |
+| [coucou](https://github.com/Louis-CFM/coucou) | app | MIT app that shows your agent sessions in the Mac notch (or the top of the screen on Windows and Linux) and lets you allow or deny Claude Code permission requests, with iPhone and Android companions. It also bundles extras such as dictation, a crypto portfolio pill and service integrations, so check what you switch on. |
 
 ### Setup & Rules
 
@@ -378,6 +418,35 @@ Give the agent current documentation and a way to query your databases.
 | [modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) | plugin + skill | Apache-2.0 skill and Claude Code plugin from the Chrome, Edge, Firefox and MDN teams that gives the agent current web-platform guides and browser-compatibility data, plus a scanner for legacy code. Installs through npx or the plugin marketplace. |
 
 
+### Local Models & OCR
+
+Run models on your own hardware, or read documents with AI. Not agent plugins.
+
+| Name | Type | What it does |
+|---|---|---|
+| [airllm](https://github.com/lyogavin/airllm) | library | Python library for running large LLM inference on a single 4GB GPU (Apache-2.0). |
+| [colibri](https://github.com/JustVugg/colibri) | inference engine | Hierarchical inference engine in C for large mixture-of-experts models: hot experts on GPU (CUDA, Vulkan), warm in RAM, cold streamed from NVMe. |
+| [FreeToken](https://github.com/FlashML-org/FreeToken) | serving | Serving engine that aims to run massive models locally on a desktop (Apache-2.0). |
+| [Unlimited-OCR](https://github.com/baidu/Unlimited-OCR) | model | Baidu's OCR model for one-shot, long-horizon document parsing (MIT). |
+
+### MCP Tools
+
+Build, call and manage MCP servers.
+
+| Name | Type | What it does |
+|---|---|---|
+| [mcp-use](https://github.com/mcp-use/mcp-use) | app | TypeScript framework for building MCP servers and MCP apps. |
+| [mcporter](https://github.com/openclaw/mcporter) | CLI + library | Lists and calls MCP servers from a terminal or TypeScript script, imports your Claude Code and Desktop MCP configs, and can package a server as its own CLI. Handles OAuth logins and runs the servers you configure. |
+
+### Reverse Engineering
+
+Study an existing app, game or binary, then rebuild or analyse it.
+
+| Name | Type | What it does |
+|---|---|---|
+| [craft-anything](https://github.com/storytold/craft-anything) | app | Open-source (MIT/Apache-2.0, early alpha) desktop app and MCP server that studies a website, app or game, then has Claude Code build your own version and check it against the original. |
+| [rea](https://github.com/morluto/rea) | MCP | MCP server for reverse engineering binaries, apps and runtime behavior, with Claude Code setup. Launches local analysis tools, so treat it as code-executing and security-sensitive. |
+
 [↑ Contents](#contents)
 
 ## Games
@@ -393,6 +462,7 @@ Build a game: engine skills, MCP servers and a full studio workflow.
 | [godot-mcp](https://github.com/Coding-Solo/godot-mcp) | MCP | Lets Claude launch the Godot editor, run projects and read debug output. |
 | [Claude-Code-Game-Studios](https://github.com/Donchitos/Claude-Code-Game-Studios) | skill + agents | Turns a Claude Code session into a game studio with 49 specialised agents, 70+ workflow skills, hooks and rules covering design, programming, art, audio, QA and production. MIT licensed. |
 | [sprite-gen](https://github.com/aldegad/sprite-gen) | skill | Claude skill and Python CLI that turns one base image into clean transparent game sprite atlases and animation loops. Uses your own image/video provider keys, so generation can cost money. |
+| [Claude-of-Duty](https://github.com/mshumer/Claude-of-Duty) | example | Demo of a Call of Duty-style first-person shooter in Three.js built from a single prompt (MIT). |
 
 ### Modding
 
@@ -414,10 +484,8 @@ Polish, translate and review academic papers.
 | Name | Type | What it does |
 |---|---|---|
 | [awesome-ai-research-writing](https://github.com/Leey21/awesome-ai-research-writing) | list | Prompt templates (translating, polishing, shortening, reviewer-style checks) and agent skills for writing research papers; the README is in Chinese. |
-| [last30days-skill](https://github.com/mvanhorn/last30days-skill) | plugin | Researches a topic across Reddit, X, YouTube, Hacker News and the web from the last 30 days and writes a sourced summary. Sends search queries to those platforms. |
 | [academic-research-skills](https://github.com/Imbad0202/academic-research-skills) | plugin | Skill suite that guides academic work through research, writing, review and revision with human sign-off at each stage. CC BY-NC: non-commercial use only. |
 | [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | skill | Library of 177 scientific skills for biology, chemistry, medicine and data analysis, plus guides to 100+ databases. Works across agents, Claude Code included. |
-| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | app + skill | Research agent that searches the web and your files and writes a cited report; installs as a Claude skill. Free code, but needs your own OpenAI and Tavily keys (about $0.40 a run). |
 | [Auto-claude-code-research-in-sleep](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) | skills | Markdown skill workflow where Claude Code runs research loops and drafts papers, with Codex as reviewer. Needs a Codex/OpenAI account and runs autonomously, so it can spend money. |
 | [claude-code-my-workflow](https://github.com/pedrohcgs/claude-code-my-workflow) | template | Fork-ready Claude Code setup of agents, skills and hooks for academic slides, papers and R analysis. Ships broad allow rules such as `Bash(*)`. |
 
@@ -432,6 +500,29 @@ Make writing sound human, plain or story-like.
 | [oh-story-claudecode](https://github.com/zenstory-ai/oh-story-claudecode) | skills | 14 skills for writing Chinese web novels: outlines, drafting and de-AI editing. README is Chinese-first; cover images need a paid image API. |
 
 [↑ Contents](#contents)
+
+## Research
+
+### Web Research
+
+Research a topic across the web and write it up with sources.
+
+| Name | Type | What it does |
+|---|---|---|
+| [last30days-skill](https://github.com/mvanhorn/last30days-skill) | plugin | Researches a topic across Reddit, X, YouTube, Hacker News and the web from the last 30 days and writes a sourced summary. Sends search queries to those platforms. |
+| [gpt-researcher](https://github.com/assafelovic/gpt-researcher) | app + skill | Research agent that searches the web and your files and writes a cited report; installs as a Claude skill. Free code, but needs your own OpenAI and Tavily keys (about $0.40 a run). |
+
+### Investigation & Analysis
+
+Work things out from evidence: photos, public discussion and trends.
+
+| Name | Type | What it does |
+|---|---|---|
+| [geo-sleuth](https://github.com/Oldcircle/geo-sleuth) | skill | MIT skill that works out where a photo was taken from OpenStreetMap geometry and terrain, and shows its reasoning. It queries OpenStreetMap live; use it only on photos you have permission to analyze. |
+| [BettaFish](https://github.com/666ghj/BettaFish) | multi-agent app | Multi-agent public-opinion analysis assistant that collects and analyses online discussion and predicts trends (GPL-2.0). |
+
+[↑ Contents](#contents)
+
 
 ## Productivity
 
@@ -456,8 +547,6 @@ Skills for product managers and founders.
 | [Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills) | plugin | 77 product-management skills and 6 workflows for PRDs, roadmaps, discovery and research. CC BY-NC-SA 4.0: non-commercial use only. |
 | [skills](https://github.com/slavingia/skills) | plugin | Ten skills based on The Minimalist Entrepreneur that walk you through finding a community, validating an idea, building an MVP, pricing and growing a business. |
 
-[↑ Contents](#contents)
-
 ### Smart Home
 
 Control and set up your home with Claude.
@@ -465,6 +554,16 @@ Control and set up your home with Claude.
 | Name | Type | What it does |
 |---|---|---|
 | [ha-mcp](https://github.com/homeassistant-ai/ha-mcp) | MCP server | Lets Claude control and set up Home Assistant: devices, automations, scenes, dashboards and config, through 87 tools. It runs with an administrator token, so it can change or delete automations and control devices; use a dedicated account. |
+
+### Messaging
+
+Connect Claude to your messaging accounts.
+
+| Name | Type | What it does |
+|---|---|---|
+| [whatsapp-mcp](https://github.com/lharries/whatsapp-mcp) | MCP | An MIT-licensed MCP server that connects your personal WhatsApp account to Claude so it can search, read and send messages. Sends messages from your WhatsApp account. |
+
+[↑ Contents](#contents)
 
 ## Career
 
@@ -502,90 +601,10 @@ Where to find more.
 | [awesome-harness-engineering](https://github.com/ai-boost/awesome-harness-engineering) | list | Curated list of patterns and tools for the harness around an AI model: context delivery, tool design, skills and MCP, memory, permissions and verification. Not Claude-only. |
 | [awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code) | list | Hand-curated list of Claude Code skills, agents, plugins, hooks, status lines and tooling. CC BY-NC-ND licence: link to it, don't copy its content. |
 | [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | list | Curated list of 1,000+ agent skills from official teams and the community. Works across several agents, Claude Code included. |
+| [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | list | 100+ open-source AI agent, agent-skill and RAG app examples, including Claude and MCP ones. |
 
 **Security:** skills run commands on your machine, so read a skill before you install it.
 
-
-[↑ Contents](#contents)
-
-## Standalone
-
-### Media Tools
-
-Apps, models and datasets for video, image, audio and 3D. They run on their own and aren't Claude skills or plugins.
-
-| Name | Type | What it does |
-|---|---|---|
-| [AI-Youtube-Shorts-Generator](https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator) | app | Open-source Opus Clip alternative: an LLM picks highlights from long YouTube videos, Whisper transcribes, and clips are auto-cropped to 9:16 shorts. |
-| [hotclip](https://github.com/xixihhhh/hotclip) | app | Free open-source local AI clipper that cuts long videos, livestream replays and podcasts into vertical 9:16 shorts with auto subtitles; publishing targets Chinese platforms. |
-| [upscayl](https://github.com/upscayl/upscayl) | desktop app | Free and open-source AI image upscaler for Linux, macOS and Windows. |
-| [MisoTTS](https://github.com/MisoLabsAI/MisoTTS) | model | Miso TTS 8B, an open 8-billion-parameter expressive text-to-speech model with a hosted demo and local setup via uv. |
-| [VoiceStudio](https://github.com/debpalash/voicestudio) | app | Open-source (AGPL-3.0) local voice studio for cloning, designing, dubbing, dictating and transcribing voices in 646 languages, positioned as an ElevenLabs alternative. |
-| [fish-speech](https://github.com/fishaudio/fish-speech) | model | Open-source text-to-speech and voice cloning model from Fish Audio. |
-| [Rhubarb Lip Sync](https://github.com/DanielSWolf/rhubarb-lip-sync) | CLI | Command-line tool that automatically creates 2D mouth animation (mouth shapes) from voice recordings for games and cartoons. |
-| [WhisperX](https://github.com/m-bain/whisperx) | CLI | Automatic speech recognition with word-level timestamps and speaker diarization, built on Whisper. |
-| [yt-dlp](https://github.com/yt-dlp/yt-dlp) | CLI | Feature-rich command-line audio/video downloader (Unlicense). |
-| [NVIDIA SimReady Central](https://huggingface.co/spaces/nvidia/simready-central) | app | NVIDIA Hugging Face Space for semantic search of physics-ready OpenUSD 3D assets with RTX simulation previews. |
-
-
-### Local Models & OCR
-
-Run models on your own hardware, or read documents with AI. Not agent plugins.
-
-| Name | Type | What it does |
-|---|---|---|
-| [airllm](https://github.com/lyogavin/airllm) | library | Python library for running large LLM inference on a single 4GB GPU (Apache-2.0). |
-| [colibri](https://github.com/JustVugg/colibri) | inference engine | Hierarchical inference engine in C for large mixture-of-experts models: hot experts on GPU (CUDA, Vulkan), warm in RAM, cold streamed from NVMe. |
-| [FreeToken](https://github.com/FlashML-org/FreeToken) | serving | Serving engine that aims to run massive models locally on a desktop (Apache-2.0). |
-| [Unlimited-OCR](https://github.com/baidu/Unlimited-OCR) | model | Baidu's OCR model for one-shot, long-horizon document parsing (MIT). |
-
-### Agents & Harnesses
-
-Separate agents you run yourself instead of adding them to Claude.
-
-| Name | Type | What it does |
-|---|---|---|
-| [jcode](https://github.com/1jehuang/jcode) | agent harness | High-performance coding agent harness written in Rust, built to run many agents in parallel with low RAM use (MIT). |
-| [BettaFish](https://github.com/666ghj/BettaFish) | multi-agent app | Multi-agent public-opinion analysis assistant that collects and analyses online discussion and predicts trends (GPL-2.0). |
-| [hermes-agent](https://github.com/NousResearch/hermes-agent) | agent | Nous Research's open-source agent that grows with you (MIT). |
-| [paperclip](https://github.com/paperclipai/paperclip) | app | Open-source (MIT) app for managing teams of AI agents at work. |
-| [OpenMausBot](https://github.com/milind-soni/OpenMausBot) | bot | Open-source Grok Bot alternative with a virtual machine the bots can use (Apache-2.0). |
-
-### Clients & UIs
-
-Desktop and mobile apps that sit on top of Claude Code.
-
-| Name | Type | What it does |
-|---|---|---|
-| [orca](https://github.com/stablyai/orca) | app | Desktop app that runs Claude Code and other coding agents in parallel, each in its own git worktree. MIT licensed; collects anonymous usage data unless you opt out. |
-| [clauding](https://github.com/nishaj0/clauding) | app | Discord Rich Presence for Claude Code and the Claude desktop app: status, model and live token counts. |
-| [opcode](https://github.com/winfunc/opcode) | app | AGPL-3.0 desktop GUI for Claude Code that manages sessions and custom agents, tracks usage and manages MCP servers. Independent of Anthropic. |
-| [happy](https://github.com/slopus/happy) | app | MIT mobile, web and CLI client that runs Claude Code and other agents on your computer and lets you continue the sessions from your phone. Sessions sync through a relay server, end-to-end encrypted. |
-| [coucou](https://github.com/Louis-CFM/coucou) | app | MIT app that shows your agent sessions in the Mac notch (or the top of the screen on Windows and Linux) and lets you allow or deny Claude Code permission requests, with iPhone and Android companions. It also bundles extras such as dictation, a crypto portfolio pill and service integrations, so check what you switch on. |
-
-### Apps & Tools
-
-Full products and tools. Useful, but you run them yourself.
-
-| Name | Type | What it does |
-|---|---|---|
-| [open-codesign](https://github.com/OpenCoworkAI/open-codesign) | app | Open-source (MIT) Claude Design alternative that turns prompts into prototypes, slides or PDFs; multi-model, bring your own key, local-first. |
-| [open-seo](https://github.com/every-app/open-seo) | app | Open-source (MIT) alternative to Semrush and Ahrefs for SEO. |
-| [craft-anything](https://github.com/storytold/craft-anything) | app | Open-source (MIT/Apache-2.0, early alpha) desktop app and MCP server that studies a website, app or game, then has Claude Code build your own version and check it against the original. |
-| [mcp-use](https://github.com/mcp-use/mcp-use) | app | TypeScript framework for building MCP servers and MCP apps. |
-| [whatsapp-mcp](https://github.com/lharries/whatsapp-mcp) | MCP | An MIT-licensed MCP server that connects your personal WhatsApp account to Claude so it can search, read and send messages. Sends messages from your WhatsApp account. |
-| [rea](https://github.com/morluto/rea) | MCP | MCP server for reverse engineering binaries, apps and runtime behavior, with Claude Code setup. Launches local analysis tools, so treat it as code-executing and security-sensitive. |
-| [mcporter](https://github.com/openclaw/mcporter) | CLI + library | Lists and calls MCP servers from a terminal or TypeScript script, imports your Claude Code and Desktop MCP configs, and can package a server as its own CLI. Handles OAuth logins and runs the servers you configure. |
-| [geo-sleuth](https://github.com/Oldcircle/geo-sleuth) | skill | MIT skill that works out where a photo was taken from OpenStreetMap geometry and terrain, and shows its reasoning. It queries OpenStreetMap live; use it only on photos you have permission to analyze. |
-
-### Examples & Demos
-
-See what people have built.
-
-| Name | Type | What it does |
-|---|---|---|
-| [Claude-of-Duty](https://github.com/mshumer/Claude-of-Duty) | example | Demo of a Call of Duty-style first-person shooter in Three.js built from a single prompt (MIT). |
-| [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | list | 100+ open-source AI agent, agent-skill and RAG app examples, including Claude and MCP ones. |
 
 [↑ Contents](#contents)
 

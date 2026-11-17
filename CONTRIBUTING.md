@@ -1,6 +1,6 @@
 # Contributing
 
-Everything lives in `README.md`. Add one table row to the right section (create a new `###` section under the right `##` category if none fits, and add it to the Contents list at the top). Things that run on their own and don't plug into an agent go under **Standalone**.
+Everything lives in `README.md`. Add one table row to the right section (create a new `###` section under the right `##` category if none fits, and add it to the Contents list at the top).
 
 Category names stay short and plain (`Video`, `Marketing`). The entry itself can be as descriptive as needed.
 

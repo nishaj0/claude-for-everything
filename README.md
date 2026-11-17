@@ -10,7 +10,7 @@ A community-maintained list of skills, plugins, MCP servers and rule files for C
 
 - **[Video](#video)**: [Editing](#editing) · [Motion Graphics](#motion-graphics) · [Animation Styles](#animation-styles) · [Prompts](#prompts)
 - **[Audio](#audio)**: [Sound Effects](#sound-effects)
-- **[Design](#design)**: [UI](#ui) · [Diagrams](#diagrams) · [Logo & Brand](#logo--brand) · [Web Animation & 3D](#web-animation--3d) · [3D](#3d)
+- **[Design](#design)**: [UI](#ui) · [Diagrams](#diagrams) · [Logo & Brand](#logo--brand) · [Image & Asset Generation](#image--asset-generation) · [Web Animation & 3D](#web-animation--3d) · [3D](#3d)
 - **[Marketing](#marketing)**: [SEO](#seo) · [Social Content](#social-content) · [Sales Outreach](#sales-outreach)
 - **[Dev](#dev)**: [Workflow & Planning](#workflow--planning) · [Multi-Agent & Orchestration](#multi-agent--orchestration) · [Setup & Rules](#setup--rules) · [Guides & Learning](#guides--learning) · [Code Review & Safety](#code-review--safety) · [Token Saving & Cost](#token-saving--cost) · [Providers & Routing](#providers--routing) · [Memory & Context](#memory--context) · [Code Intelligence](#code-intelligence) · [Browser & Computer Control](#browser--computer-control) · [Docs & Databases](#docs--databases)
 - **[Games](#games)**: [Game Dev](#game-dev) · [Modding](#modding)
@@ -37,14 +37,14 @@ Not sure where to begin? Eight picks, one per area:
 
 ## Recently added
 
+- [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion): art styles turned into animation made in code. ([Animation Styles](#animation-styles))
+- [scenario-labs/skills](https://github.com/scenario-labs/skills): generate images, video, audio and 3D from the agent. ([Image & Asset Generation](#image--asset-generation))
+- [geo-sleuth](https://github.com/Oldcircle/geo-sleuth): find where a photo was taken. ([Apps & Tools](#apps--tools))
+- [blender-skills](https://github.com/EL4CTEO/blender-skills): 28 Blender workflow skills. ([3D](#3d))
+- [coucou](https://github.com/Louis-CFM/coucou): agent sessions and permission prompts in your Mac notch. ([Clients & UIs](#clients--uis))
 - [rederive](https://github.com/EricJujianZou/rederive): learn a codebase by re-deriving it yourself. ([Guides & Learning](#guides--learning))
 - [modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance): current web-platform guides for the agent. ([Docs & Databases](#docs--databases))
 - [claude-hud](https://github.com/jarrodwatts/claude-hud): a live status bar for context, limits and agents. ([Token Saving & Cost](#token-saving--cost))
-- [claude-code-router](https://github.com/musistudio/claude-code-router): route Claude Code to the providers you choose. ([Providers & Routing](#providers--routing))
-- [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents): 100+ ready-made subagents. ([Multi-Agent & Orchestration](#multi-agent--orchestration))
-- [claude-code-tips](https://github.com/ykdojo/claude-code-tips): 45+ tips for Claude Code. ([Guides & Learning](#guides--learning))
-- [claude-code-infrastructure-showcase](https://github.com/diet103/claude-code-infrastructure-showcase): skills that activate through hooks. ([Setup & Rules](#setup--rules))
-- [Skill_Seekers](https://github.com/yusufkaraaslan/Skill_Seekers): turn docs and repos into skills. ([Docs & Databases](#docs--databases))
 
 ## Video
 
@@ -88,6 +88,7 @@ Style skills for stylised animated films and shorts. Pick one per project.
 | [stickman-video-director](https://github.com/kaomei/stickman-video-director) | skill | Skill that turns a topic, article or script into animated stickman videos for faceless YouTube channels, with 10 visual styles, in a storyboard-and-prompts Director mode or an Autopilot mode. |
 | [hypit](https://github.com/hypit-ai/hypit) | skill | Open-source skill and runtime that lets Claude clone or create videos (footage, captions, B-roll, effects anchored to words) from a text-based video workflow format. |
 | [anidoodle](https://github.com/alexgreensh/anidoodle) | skill | Skill that draws illustrations, timelapses and short films as code in 32 styles, with scores composed in code. Needs Playwright and ffmpeg; the optional sound pack is a 373 MB download. |
+| [huashu-art-motion](https://github.com/alchaincyf/huashu-art-motion) | skill | MIT skill with 36 art styles, 9 narration grammars and 8 parameterised clips that turn a style into animated art made in code, plus reference code for a full voice-over video. |
 
 ### Prompts
 
@@ -154,6 +155,14 @@ Make agents produce better-looking interfaces.
 | [logo-design-skill](https://github.com/kaankiziltug/logo-design-skill) | skill | Logo-design skill covering brief, concepts, SVG construction and testing, with a searchable library of 1,400+ real SVG logos and Python tools for auditing and exporting. |
 | [dashboard-icons](https://github.com/homarr-labs/dashboard-icons) | MCP | 3,400+ curated dashboard icons and logos, with a free MCP server. |
 
+### Image & Asset Generation
+
+Have the agent make images, video, audio and 3D assets.
+
+| Name | Type | What it does |
+|---|---|---|
+| [scenario-labs/skills](https://github.com/scenario-labs/skills) | collection | MIT agent skills that teach Claude to make images, video, audio, textures and 3D assets through the Scenario MCP server, plus expert skills for Blender, Maya, Unreal, Unity, Godot and Roblox Studio. Generation runs on your Scenario account and can cost credits; the expert skills only need the app. |
+
 ### Web Animation & 3D
 
 Teach the agent to build award-style animated sites and interactive 3D.
@@ -168,11 +177,12 @@ Teach the agent to build award-style animated sites and interactive 3D.
 
 ### 3D
 
-Let Claude drive 3D software.
+Let Claude drive 3D software and teach it Blender workflows.
 
 | Name | Type | What it does |
 |---|---|---|
 | [mcp-for-blender](https://github.com/ahujasid/mcp-for-blender) | MCP | A community MCP server (formerly blender-mcp) that lets Claude Desktop and Claude Code control Blender 3D. Runs Python inside Blender; telemetry is on by default, the installer runs a curl script, and some AI 3D-model features are paid. |
+| [blender-skills](https://github.com/EL4CTEO/blender-skills) | plugin | MIT plugin of 28 Blender skills covering modeling, UVs, texturing, rigging, animation, rendering and export, for Claude Code and other agents. Built for Blender 5.2 LTS or newer. |
 
 [↑ Contents](#contents)
 
@@ -551,6 +561,7 @@ Desktop and mobile apps that sit on top of Claude Code.
 | [clauding](https://github.com/nishaj0/clauding) | app | Discord Rich Presence for Claude Code and the Claude desktop app: status, model and live token counts. |
 | [opcode](https://github.com/winfunc/opcode) | app | AGPL-3.0 desktop GUI for Claude Code that manages sessions and custom agents, tracks usage and manages MCP servers. Independent of Anthropic. |
 | [happy](https://github.com/slopus/happy) | app | MIT mobile, web and CLI client that runs Claude Code and other agents on your computer and lets you continue the sessions from your phone. Sessions sync through a relay server, end-to-end encrypted. |
+| [coucou](https://github.com/Louis-CFM/coucou) | app | MIT app that shows your agent sessions in the Mac notch (or the top of the screen on Windows and Linux) and lets you allow or deny Claude Code permission requests, with iPhone and Android companions. It also bundles extras such as dictation, a crypto portfolio pill and service integrations, so check what you switch on. |
 
 ### Apps & Tools
 
@@ -565,6 +576,7 @@ Full products and tools. Useful, but you run them yourself.
 | [whatsapp-mcp](https://github.com/lharries/whatsapp-mcp) | MCP | An MIT-licensed MCP server that connects your personal WhatsApp account to Claude so it can search, read and send messages. Sends messages from your WhatsApp account. |
 | [rea](https://github.com/morluto/rea) | MCP | MCP server for reverse engineering binaries, apps and runtime behavior, with Claude Code setup. Launches local analysis tools, so treat it as code-executing and security-sensitive. |
 | [mcporter](https://github.com/openclaw/mcporter) | CLI + library | Lists and calls MCP servers from a terminal or TypeScript script, imports your Claude Code and Desktop MCP configs, and can package a server as its own CLI. Handles OAuth logins and runs the servers you configure. |
+| [geo-sleuth](https://github.com/Oldcircle/geo-sleuth) | skill | MIT skill that works out where a photo was taken from OpenStreetMap geometry and terrain, and shows its reasoning. It queries OpenStreetMap live; use it only on photos you have permission to analyze. |
 
 ### Examples & Demos
 

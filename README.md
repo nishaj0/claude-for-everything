@@ -217,6 +217,7 @@ Humanizing tools such as [humanizer](#style--fiction) are listed under Writing.
 | Name | Type | What it does |
 |---|---|---|
 | [harvey](https://github.com/ethanplusai/harvey) | app (runs on Claude Code) | Autonomous sales agent that runs on your Claude Code subscription: finds businesses, writes specific cold emails, reads replies and keeps a local dashboard, with drafts held in an outbox for your approval. |
+| [Datacircle](https://datacircle.dev) | skill + API | Find the best GTM APIs. A free, open API and a skill file (datacircle.dev/SKILL.md) that let an agent compare the plans of every GTM API, at api.datacircle.dev/v1, with no key. |
 
 
 [↑ Contents](#contents)
